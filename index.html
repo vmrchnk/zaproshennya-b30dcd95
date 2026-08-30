@@ -36,9 +36,7 @@
   @keyframes conf { 0% { opacity: 1; transform: translateY(30px) rotate(0deg); } 100% { opacity: 0; transform: translateY(-190px) rotate(400deg); } }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
   @media (max-width: 640px) {
-    .friend-row { flex-wrap: nowrap !important; gap: 8px !important; }
-    .friend-name { width: auto !important; height: clamp(24px, 7.5vw, 34px) !important; max-width: none !important; flex: 0 0 auto !important; }
-    .friend-head { width: auto !important; height: clamp(60px, 19vw, 84px) !important; max-width: none !important; flex: 0 0 auto !important; }
+    .friend-row { gap: 8px !important; }
     .pack-card { flex-wrap: nowrap !important; height: 150px !important; padding: 12px 16px !important; }
     .pack-text { min-width: 0 !important; flex: 1 1 auto !important; }
     .pack-image { width: 28vw !important; min-width: 60px !important; max-width: 130px !important; max-height: 100% !important; flex: 0 0 auto !important; }
@@ -122,25 +120,25 @@
     <section data-screen-label="03 Подружки" style="position: relative; padding: 84px 20px 70px; overflow: hidden; background: #A9DCF4;">
       <div style="position: absolute; top: 3%; right: -6%; width: min(34vw, 240px); aspect-ratio: 1 / 1; background: #D9F56B; clip-path: polygon(50% 0%, 61% 34%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 34%); animation: spinSlow 28s linear infinite; pointer-events: none;"></div>
 
-      <div style="position: relative; z-index: 2; max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px; animation: revealUp .8s ease-out both; animation-timeline: view(); animation-range: entry 6% cover 26%;">
+      <div style="position: relative; z-index: 2; max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; animation: revealUp .8s ease-out both; animation-timeline: view(); animation-range: entry 6% cover 26%;">
         <h2 style="margin: 0; text-align: center; font-family: Unbounded, Rubik, sans-serif; font-weight: 800; font-size: clamp(26px, 5.2vw, 46px); text-transform: uppercase; color: #FFFFFF; text-shadow: 4px 4px 0 #123A52; transform: rotate(-1.5deg);">На тебе будуть чекати</h2>
 
         <div style="display: flex; flex-direction: column; gap: clamp(6px, 1.4vw, 16px);">
-      <div class="friend-row" style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(4px, 1.2vw, 14px);">
-        <img class="friend-name" src="assets/name-zhdedka.png" alt="Ждедка" style="flex: 0 1 auto; width: min(56vw, 420px); transform: rotate(-2deg);" />
-        <img class="friend-head" src="assets/head-zhdedka.png" alt="Ждедка" style="flex: 0 0 auto; width: min(34vw, 215px); transform: rotate(5deg); filter: drop-shadow(0 14px 20px rgba(18,58,82,.2)); animation: floaty 6s ease-in-out infinite;" />
+      <div class="friend-row" style="display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: center; gap: clamp(4px, 1.2vw, 14px);">
+        <img class="friend-name" src="assets/name-zhdedka.png" alt="Ждедка" style="flex: 0 0 auto; width: auto; height: clamp(24px, 3.6vw, 56px); transform: rotate(-2deg);" />
+        <img class="friend-head" src="assets/head-zhdedka.png" alt="Ждедка" style="flex: 0 0 auto; width: auto; height: clamp(60px, 9vw, 140px); transform: rotate(5deg); filter: drop-shadow(0 14px 20px rgba(18,58,82,.2)); animation: floaty 6s ease-in-out infinite;" />
       </div>
-      <div class="friend-row" style="display: flex; flex-direction: row-reverse; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(4px, 1.2vw, 14px);">
-        <img class="friend-name" src="assets/name-iren.png" alt="Ірен" style="flex: 0 1 auto; width: min(38vw, 270px); transform: rotate(1.5deg);" />
-        <img class="friend-head" src="assets/head-iren.png" alt="Ірен" style="flex: 0 0 auto; width: min(34vw, 215px); transform: rotate(-6deg); filter: drop-shadow(0 14px 20px rgba(18,58,82,.2)); animation: floaty 7s ease-in-out infinite;" />
+      <div class="friend-row" style="display: flex; flex-direction: row-reverse; flex-wrap: nowrap; align-items: center; justify-content: center; gap: clamp(4px, 1.2vw, 14px);">
+        <img class="friend-name" src="assets/name-iren.png" alt="Ірен" style="flex: 0 0 auto; width: auto; height: clamp(24px, 3.6vw, 56px); transform: rotate(1.5deg);" />
+        <img class="friend-head" src="assets/head-iren.png" alt="Ірен" style="flex: 0 0 auto; width: auto; height: clamp(60px, 9vw, 140px); transform: rotate(-6deg); filter: drop-shadow(0 14px 20px rgba(18,58,82,.2)); animation: floaty 7s ease-in-out infinite;" />
       </div>
-      <div class="friend-row" style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(4px, 1.2vw, 14px);">
-        <img class="friend-name" src="assets/name-kazhanchik.png" alt="Кажанчік" style="flex: 0 1 auto; width: min(64vw, 500px); transform: rotate(-1.5deg);" />
-        <img class="friend-head" src="assets/head-kazhanchik.png" alt="Кажанчік" style="flex: 0 0 auto; width: min(34vw, 215px); transform: rotate(4deg); filter: drop-shadow(0 14px 20px rgba(18,58,82,.2)); animation: floaty 6.5s ease-in-out infinite;" />
+      <div class="friend-row" style="display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: center; gap: clamp(4px, 1.2vw, 14px);">
+        <img class="friend-name" src="assets/name-kazhanchik.png" alt="Кажанчік" style="flex: 0 0 auto; width: auto; height: clamp(24px, 3.6vw, 56px); transform: rotate(-1.5deg);" />
+        <img class="friend-head" src="assets/head-kazhanchik.png" alt="Кажанчік" style="flex: 0 0 auto; width: auto; height: clamp(60px, 9vw, 140px); transform: rotate(4deg); filter: drop-shadow(0 14px 20px rgba(18,58,82,.2)); animation: floaty 6.5s ease-in-out infinite;" />
       </div>
-      <div class="friend-row" style="display: flex; flex-direction: row-reverse; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(4px, 1.2vw, 14px);">
-        <img class="friend-name" src="assets/name-tanya.png" alt="Таня" style="flex: 0 1 auto; width: min(36vw, 250px); transform: rotate(2deg);" />
-        <img class="friend-head" src="assets/head-tanya.png" alt="Таня" style="flex: 0 0 auto; width: min(34vw, 215px); transform: rotate(-4deg); filter: drop-shadow(0 14px 20px rgba(18,58,82,.2)); animation: floaty 7.5s ease-in-out infinite;" />
+      <div class="friend-row" style="display: flex; flex-direction: row-reverse; flex-wrap: nowrap; align-items: center; justify-content: center; gap: clamp(4px, 1.2vw, 14px);">
+        <img class="friend-name" src="assets/name-tanya.png" alt="Таня" style="flex: 0 0 auto; width: auto; height: clamp(24px, 3.6vw, 56px); transform: rotate(2deg);" />
+        <img class="friend-head" src="assets/head-tanya.png" alt="Таня" style="flex: 0 0 auto; width: auto; height: clamp(60px, 9vw, 140px); transform: rotate(-4deg); filter: drop-shadow(0 14px 20px rgba(18,58,82,.2)); animation: floaty 7.5s ease-in-out infinite;" />
       </div>
         </div>
       </div>
