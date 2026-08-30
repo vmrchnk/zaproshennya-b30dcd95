@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Zaproshennya//Divych-vechir//UK
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:divych-vechir-2026@vmrchnk.github.io
+DTSTAMP:20260830T000000Z
+DTSTART:20260904T150000Z
+DTEND:20260905T090000Z
+SUMMARY:Дівич-вечір
+DESCRIPTION:Таксі о 18:00\, вул. Ділова\, 2Б. Купальник\, речі для сну і гарний голос — обов'язково.
+LOCATION:Secret place
+END:VEVENT
+END:VCALENDAR
