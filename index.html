@@ -312,7 +312,6 @@ class Component extends DCLogic {
 
   toInfo = () => {
     if (this.timer) clearTimeout(this.timer);
-    this.stopMusic();
     this.setState({ stage: 'info' });
     window.scrollTo(0, 0);
   };
