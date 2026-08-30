@@ -36,6 +36,14 @@
   @keyframes couplePop { 0% { opacity: 0; transform: scale(0) rotate(-40deg); } 65% { opacity: 1; transform: scale(1.12) rotate(7deg); } 100% { opacity: 1; transform: scale(1) rotate(0deg); } }
   @keyframes conf { 0% { opacity: 1; transform: translateY(30px) rotate(0deg); } 100% { opacity: 0; transform: translateY(-190px) rotate(400deg); } }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 640px) {
+    .friend-row { flex-wrap: nowrap !important; gap: 8px !important; }
+    .friend-name { width: auto !important; max-width: 62% !important; flex: 1 1 auto !important; min-width: 0 !important; }
+    .friend-head { width: 22vw !important; min-width: 64px !important; max-width: 100px !important; flex: 0 0 auto !important; }
+    .pack-card { flex-wrap: nowrap !important; height: auto !important; min-height: 150px !important; }
+    .pack-text { min-width: 0 !important; flex: 1 1 auto !important; }
+    .pack-image { width: 28vw !important; min-width: 70px !important; max-width: 130px !important; max-height: none !important; flex: 0 0 auto !important; }
+  }
 </style>
 </helmet>
 
@@ -117,21 +125,21 @@
         <h2 style="margin: 0; text-align: center; font-family: Unbounded, Rubik, sans-serif; font-weight: 800; font-size: clamp(26px, 5.2vw, 46px); text-transform: uppercase; color: #FFFFFF; text-shadow: 4px 4px 0 #123A52; transform: rotate(-1.5deg);">На тебе будуть чекати</h2>
 
         <div style="display: flex; flex-direction: column; gap: clamp(6px, 1.4vw, 16px);">
-      <div style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(4px, 1.2vw, 14px);">
-        <img src="assets/name-zhdedka.png" alt="Ждедка" style="flex: 0 1 auto; width: min(56vw, 420px); transform: rotate(-2deg);" />
-        <img src="assets/head-zhdedka.png" alt="Ждедка" style="flex: 0 0 auto; width: min(34vw, 215px); transform: rotate(5deg); filter: drop-shadow(0 14px 20px rgba(18,58,82,.2)); animation: floaty 6s ease-in-out infinite;" />
+      <div class="friend-row" style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(4px, 1.2vw, 14px);">
+        <img class="friend-name" src="assets/name-zhdedka.png" alt="Ждедка" style="flex: 0 1 auto; width: min(56vw, 420px); transform: rotate(-2deg);" />
+        <img class="friend-head" src="assets/head-zhdedka.png" alt="Ждедка" style="flex: 0 0 auto; width: min(34vw, 215px); transform: rotate(5deg); filter: drop-shadow(0 14px 20px rgba(18,58,82,.2)); animation: floaty 6s ease-in-out infinite;" />
       </div>
-      <div style="display: flex; flex-direction: row-reverse; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(4px, 1.2vw, 14px);">
-        <img src="assets/name-iren.png" alt="Ірен" style="flex: 0 1 auto; width: min(38vw, 270px); transform: rotate(1.5deg);" />
-        <img src="assets/head-iren.png" alt="Ірен" style="flex: 0 0 auto; width: min(34vw, 215px); transform: rotate(-6deg); filter: drop-shadow(0 14px 20px rgba(18,58,82,.2)); animation: floaty 7s ease-in-out infinite;" />
+      <div class="friend-row" style="display: flex; flex-direction: row-reverse; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(4px, 1.2vw, 14px);">
+        <img class="friend-name" src="assets/name-iren.png" alt="Ірен" style="flex: 0 1 auto; width: min(38vw, 270px); transform: rotate(1.5deg);" />
+        <img class="friend-head" src="assets/head-iren.png" alt="Ірен" style="flex: 0 0 auto; width: min(34vw, 215px); transform: rotate(-6deg); filter: drop-shadow(0 14px 20px rgba(18,58,82,.2)); animation: floaty 7s ease-in-out infinite;" />
       </div>
-      <div style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(4px, 1.2vw, 14px);">
-        <img src="assets/name-kazhanchik.png" alt="Кажанчік" style="flex: 0 1 auto; width: min(64vw, 500px); transform: rotate(-1.5deg);" />
-        <img src="assets/head-kazhanchik.png" alt="Кажанчік" style="flex: 0 0 auto; width: min(34vw, 215px); transform: rotate(4deg); filter: drop-shadow(0 14px 20px rgba(18,58,82,.2)); animation: floaty 6.5s ease-in-out infinite;" />
+      <div class="friend-row" style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(4px, 1.2vw, 14px);">
+        <img class="friend-name" src="assets/name-kazhanchik.png" alt="Кажанчік" style="flex: 0 1 auto; width: min(64vw, 500px); transform: rotate(-1.5deg);" />
+        <img class="friend-head" src="assets/head-kazhanchik.png" alt="Кажанчік" style="flex: 0 0 auto; width: min(34vw, 215px); transform: rotate(4deg); filter: drop-shadow(0 14px 20px rgba(18,58,82,.2)); animation: floaty 6.5s ease-in-out infinite;" />
       </div>
-      <div style="display: flex; flex-direction: row-reverse; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(4px, 1.2vw, 14px);">
-        <img src="assets/name-tanya.png" alt="Таня" style="flex: 0 1 auto; width: min(36vw, 250px); transform: rotate(2deg);" />
-        <img src="assets/head-tanya.png" alt="Таня" style="flex: 0 0 auto; width: min(34vw, 215px); transform: rotate(-4deg); filter: drop-shadow(0 14px 20px rgba(18,58,82,.2)); animation: floaty 7.5s ease-in-out infinite;" />
+      <div class="friend-row" style="display: flex; flex-direction: row-reverse; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(4px, 1.2vw, 14px);">
+        <img class="friend-name" src="assets/name-tanya.png" alt="Таня" style="flex: 0 1 auto; width: min(36vw, 250px); transform: rotate(2deg);" />
+        <img class="friend-head" src="assets/head-tanya.png" alt="Таня" style="flex: 0 0 auto; width: min(34vw, 215px); transform: rotate(-4deg); filter: drop-shadow(0 14px 20px rgba(18,58,82,.2)); animation: floaty 7.5s ease-in-out infinite;" />
       </div>
         </div>
       </div>
@@ -141,28 +149,28 @@
       <div style="max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 26px; animation: revealUp .8s ease-out both; animation-timeline: view(); animation-range: entry 6% cover 24%;">
         <h2 style="margin: 0; text-align: center; font-family: Unbounded, Rubik, sans-serif; font-weight: 800; font-size: clamp(24px, 4.6vw, 40px); text-transform: uppercase; color: #FF4FA3; transform: rotate(-1deg);">Бери із собою</h2>
 
-        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; height: 235px; box-sizing: border-box; background: #A9DCF4; border: 3px solid #123A52; border-radius: 20px; box-shadow: 8px 8px 0 rgba(18,58,82,.2);">
-          <div style="display: flex; flex-direction: column; gap: 6px; min-width: 150px;">
+        <div class="pack-card" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; height: 235px; box-sizing: border-box; background: #A9DCF4; border: 3px solid #123A52; border-radius: 20px; box-shadow: 8px 8px 0 rgba(18,58,82,.2);">
+          <div class="pack-text" style="display: flex; flex-direction: column; gap: 6px; min-width: 150px;">
             <h3 style="margin: 0; font-family: Unbounded, Rubik, sans-serif; font-weight: 800; font-size: clamp(24px, 4.4vw, 34px); text-transform: uppercase;">Купальник</h3>
-            
+
           </div>
-          <img src="assets/squidward.png" alt="Сквідвард" style="width: min(52vw, 265px); max-height: 100%; object-fit: contain; transform: rotate(1.5deg); filter: drop-shadow(0 10px 14px rgba(18,58,82,.18));" />
+          <img class="pack-image" src="assets/squidward.png" alt="Сквідвард" style="width: min(52vw, 265px); max-height: 100%; object-fit: contain; transform: rotate(1.5deg); filter: drop-shadow(0 10px 14px rgba(18,58,82,.18));" />
         </div>
 
-        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; height: 235px; box-sizing: border-box; background: #D9F56B; border: 3px solid #123A52; border-radius: 20px; box-shadow: 8px 8px 0 rgba(18,58,82,.2);">
-          <img src="assets/cat-mic-cut.png" alt="Кіт з мікрофоном" style="width: min(46vw, 225px); max-height: 100%; object-fit: contain; transform: rotate(-2deg); filter: drop-shadow(0 10px 14px rgba(18,58,82,.18));" />
-          <div style="display: flex; flex-direction: column; gap: 6px; min-width: 150px; text-align: right; margin-left: auto;">
+        <div class="pack-card" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; height: 235px; box-sizing: border-box; background: #D9F56B; border: 3px solid #123A52; border-radius: 20px; box-shadow: 8px 8px 0 rgba(18,58,82,.2);">
+          <img class="pack-image" src="assets/cat-mic-cut.png" alt="Кіт з мікрофоном" style="width: min(46vw, 225px); max-height: 100%; object-fit: contain; transform: rotate(-2deg); filter: drop-shadow(0 10px 14px rgba(18,58,82,.18));" />
+          <div class="pack-text" style="display: flex; flex-direction: column; gap: 6px; min-width: 150px; text-align: right; margin-left: auto;">
             <h3 style="margin: 0; font-family: Unbounded, Rubik, sans-serif; font-weight: 800; font-size: clamp(24px, 4.4vw, 34px); text-transform: uppercase;">Гарний голос</h3>
-            
+
           </div>
         </div>
 
-        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; height: 235px; box-sizing: border-box; background: #FFD3E6; border: 3px solid #123A52; border-radius: 20px; box-shadow: 8px 8px 0 rgba(18,58,82,.2);">
-          <div style="display: flex; flex-direction: column; gap: 6px; min-width: 150px;">
+        <div class="pack-card" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; height: 235px; box-sizing: border-box; background: #FFD3E6; border: 3px solid #123A52; border-radius: 20px; box-shadow: 8px 8px 0 rgba(18,58,82,.2);">
+          <div class="pack-text" style="display: flex; flex-direction: column; gap: 6px; min-width: 150px;">
             <h3 style="margin: 0; font-family: Unbounded, Rubik, sans-serif; font-weight: 800; font-size: clamp(24px, 4.4vw, 34px); text-transform: uppercase;">Речі для сну</h3>
-            
+
           </div>
-          <img src="assets/mouse-bride-cut.png" alt="Мишка в сукні" style="width: min(38vw, 180px); max-height: 100%; object-fit: contain; transform: rotate(2deg); filter: drop-shadow(0 10px 14px rgba(18,58,82,.18));" />
+          <img class="pack-image" src="assets/mouse-bride-cut.png" alt="Мишка в сукні" style="width: min(38vw, 180px); max-height: 100%; object-fit: contain; transform: rotate(2deg); filter: drop-shadow(0 10px 14px rgba(18,58,82,.18));" />
         </div>
       </div>
     </section>
